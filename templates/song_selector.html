@@ -4,14 +4,12 @@
 
 
 {% from "_formhelpers.html" import render_field %}
-<form method="post">
+<form method="post" action="">
   <dl>
-    {% for your_list_element in your_list %}
-      <p>{{ your_list_element }}
-      <p> {{ render_field(form.select) }} </p>
-      <p> {{ render_field(form.select2) }} </p>
-
-  {% endfor %}
+    {% for i in range(10) %}
+    {{ ten_song_names[i] }}
+      {{ form.songs[i]() }}
+{% endfor %}
   </dl>
   <p><input type="submit" value="Rate">
 </p></form>
