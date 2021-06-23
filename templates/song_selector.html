@@ -9,6 +9,8 @@
     {% for your_list_element in your_list %}
       <p>{{ your_list_element }}
       <p> {{ render_field(form.select) }} </p>
+      <p> {{ render_field(form.select2) }} </p>
+
   {% endfor %}
   </dl>
   <p><input type="submit" value="Rate">

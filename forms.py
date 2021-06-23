@@ -6,3 +6,4 @@ class SongRaterForm(Form):
                ('1', 'Like')]
     songs = []
     select = SelectField('Rate this song:', choices=choices)
+    select2 = SelectField('Rate this song:', choices=choices, id="test")
